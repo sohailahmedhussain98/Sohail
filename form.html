@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <form id="orderForm" action="submit_form.php" method="POST"></form>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #0073e6;
+            color: white;
+        }
+        header .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            background-color: #005bb5;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #003f7f;
+        }
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        footer a {
+            color: #0073e6;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Your Logo</div>
+        <nav>
+            <a href="#">Button 1</a>
+            <a href="#">Button 2</a>
+            <a href="#">Button 3</a>
+            <a href="#">Button 4</a>
+            <a href="#">Button 5</a>
+            <a href="#">Button 6</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Order Shilajit</h1>
+        <form id="orderForm" action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name (Required)</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number (Required)</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="gmail">Gmail (Optional)</label>
+                <input type="email" id="gmail" name="gmail" placeholder="This is not necessary">
+            </div>
+            <div class="form-group">
+                <label for="address">Address (Required)</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Select Amount (Required)</label>
+                <select id="amount" name="amount" required>
+                    <option value="">-- Select --</option>
+                    <option value="10g">10g</option>
+                    <option value="20g">20g</option>
+                    <option value="30g">30g</option>
+                    <option value="40g">40g</option>
+                    <option value="50g">50g</option>
+                    <option value="100g">100g</option>
+                    <option value="200g">200g</option>
+                    <option value="500g">500g</option>
+                    <option value="1000g">1000g</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p style="color: red; font-weight: bold;">Cash on Delivery Only</p>
+            </div>
+            <div class="form-group">
+                <button type="submit">Order Now</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Follow us: 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">TikTok</a> | 
+            <a href="#">YouTube</a> | 
+            <a href="#">Shopify</a> | 
+            <a href="#">Website</a>
+        </p>
+        <p>Call or WhatsApp: 123-456-7890</p>
+    </footer>
+</body>
+</html>
